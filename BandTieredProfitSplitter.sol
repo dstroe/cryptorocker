@@ -5,13 +5,13 @@ contract TieredProfitSplitter {
     address payable lead_singer; // original singer and songwriter
     address payable lead_guitarist; // original guitarist and songwriter
     address payable lead_drummer; // original lead_drummer
-    address payable lead_bassguitarist; replacement bass guitar player
+    address payable lead_bassguitarist; //replacement bass guitar player
 
-    constructor(address payable _one, address payable _two, address payable _three, address payable _four), public {
+    constructor(address payable _one, address payable _two, address payable _three, address payable _four) public {
         lead_singer = _one;
         lead_guitarist = _two;
         lead_drummer = _three;
-        lead_bassguitarist
+        lead_bassguitarist = _four;
     }
 
     // Should always return 0! Use this to test your `deposit` function's logic
