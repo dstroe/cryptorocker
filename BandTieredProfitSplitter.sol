@@ -42,7 +42,7 @@ contract TieredProfitSplitter {
         total += amount;
         lead_drummer.transfer(amount);
 
-         // for lead bass guitarist
+        // for lead bass guitarist
 
         amount = points * 15; // "15%" distribution
         total += amount;
